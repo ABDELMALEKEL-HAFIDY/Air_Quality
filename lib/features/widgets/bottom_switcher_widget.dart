@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class BottomSwitcherWidget extends StatelessWidget {
   const BottomSwitcherWidget({
     super.key,
     required this.isMapSelected,
-    required this.onChanged,
+    required this.onMapTap,
+    required this.onGridTap,
   });
   final bool isMapSelected;
-  final ValueChanged<bool> onChanged;
+  final VoidCallback onMapTap;
+  final VoidCallback onGridTap;
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -25,7 +28,7 @@ class BottomSwitcherWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               GestureDetector(
-                onTap: () => onChanged(true),
+                onTap: onMapTap,
                 child: Container(
                   width: 56,
                   height: 56,
@@ -42,7 +45,7 @@ class BottomSwitcherWidget extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               GestureDetector(
-                onTap: () => onChanged(false),
+                onTap: onGridTap,
                 child: Container(
                   width: 56,
                   height: 56,
