@@ -9,10 +9,10 @@ final GoRouter router = GoRouter(
       name: 'home',
       builder: (context, state) => const HomeScreens(),
     ),
-    //  GoRoute(
-    //   path: 'airQualityData',
-    //   //name: 'airQualityData',
-    //   builder: (context, state) => const AirQualityDataScreen(),
-    // ),
+     GoRoute(
+      path: '/airQualityData',
+      name: 'airQualityData',
+      builder: (context, state) => const AirQualityDataScreen(),
+    ),
   ],
 );
