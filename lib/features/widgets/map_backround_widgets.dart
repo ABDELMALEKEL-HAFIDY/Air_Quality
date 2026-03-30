@@ -9,7 +9,7 @@ class MapBackroundWidgets extends StatelessWidget {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-      color:  Color(0xFF2B3C53),
+      color:  Color(0xFF2B3C53), 
        //borderRadius: BorderRadius.circular(30)
       ),
       child: Image.asset(
