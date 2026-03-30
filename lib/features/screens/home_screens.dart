@@ -4,6 +4,7 @@ import 'package:air_quality_1/features/widgets/location_button_widgets.dart';
 import 'package:air_quality_1/features/widgets/map_backround_widgets.dart';
 import 'package:air_quality_1/features/widgets/top_bar_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreens extends StatefulWidget {
   const HomeScreens({super.key});
@@ -14,11 +15,8 @@ class HomeScreens extends StatefulWidget {
 
 class _HomeScreensState extends State<HomeScreens> {
   bool isMapSelected = true;
-  void toggleView (bool value){
-    setState(() {
-      isMapSelected = value;
-    });
-  }
+  
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +29,17 @@ class _HomeScreensState extends State<HomeScreens> {
             LocationButtonWidgets(),
             BottomSwitcherWidget(
               isMapSelected: isMapSelected,
-              onChanged: toggleView,
+              onMapTap: (){
+                setState((){
+                  isMapSelected =true;
+                });
+              },
+               onGridTap: (){
+                  setState(() {
+                    isMapSelected = false;
+                  });
+                   context.goNamed('airQualityData');
+                },
             ),
           ],
         ),
