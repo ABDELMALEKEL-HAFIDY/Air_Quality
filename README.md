@@ -11,9 +11,11 @@ Modern Flutter UI for air quality monitoring with map & data screens.
 - 🧩 Reusable widgets
 
 ## 📸 Screenshots
+<p align="center">
+  <img src="screnshot/Screenshot_1.png" width="260"/>
+  <img src="screnshot/Screenshot_2.png" width="260"/>
+</p>
 
-![Map](screnshot/Screenshot_1.png)
-![Air Quality](screnshot/Screenshot_2.png)
 
 ## 🚀 Run
 
