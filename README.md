@@ -1,16 +1,22 @@
-# air_quality_1
+# 🌍 Air Quality Flutter App
 
-A new Flutter project.
+Modern Flutter UI for air quality monitoring with map & data screens.
 
-## Getting Started
+## ✨ Features
+- 🗺️ Map Screen UI
+- 📊 Air Quality Data Screen
+- 🔄 Navigation with GoRouter
+- 🎨 Clean & modern design
+- 📱 Responsive layout
+- 🧩 Reusable widgets
 
-This project is a starting point for a Flutter application.
+## 📸 Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+![Map](screnshot/Screenshot_1.png)
+![Air Quality](screnshot/Screenshot_2.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🚀 Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
