@@ -18,7 +18,7 @@ class TopInfoBarWidget extends StatelessWidget {
           _CircleIconButton(icon: Iconsax.setting_2_copy),
           const Spacer(),
           const Text(
-            'San Francisco',
+            'Kenitra, Morocco',
             style: TextStyle(
               color: Colors.white,
               fontSize: 16,

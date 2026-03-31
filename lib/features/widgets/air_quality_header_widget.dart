@@ -62,10 +62,12 @@ class AirQualityHeaderWidget extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: Container(
+             
+              width: MediaQuery.of(context).size.width * 0.39,
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
               decoration: BoxDecoration(
                 color: AppColors.topbar.withOpacity(0.65),
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(35),
               ),
               child: const Row(
                 mainAxisSize: MainAxisSize.min,
@@ -78,7 +80,7 @@ class AirQualityHeaderWidget extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(width: 8),
+                  SizedBox(width: 10),
                   Icon(
                     Iconsax.arrow_down_1_copy,
                     color: Colors.white,
