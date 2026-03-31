@@ -37,7 +37,6 @@ class AirlyCardWidgets extends StatelessWidget {
               'airly',
               style: GoogleFonts.montserratAlternates(
                 color: Color(0xFF1F2C3D),
-
                 fontSize: 20,
                 fontWeight: FontWeight.w600,
                 letterSpacing: 0.5,
